@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: rgb(213, 230, 255);
+  animation-name: intro_animation;
+  animation-duration: 3s;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  font-family: "Lora", serif;
+}
+
+#intro {
+  background-image: linear-gradient(rgb(183, 195, 255), rgb(213, 230, 255));
+  margin: 0 auto;
+  border: 0;
+  padding: 0;
+  font-size: 20px;
+  height: 300px;
+}
+
+#intro > h1 {
+  margin-top: 30px;
+  /* background-color: rgba(255, 255, 255, 0.486); */
+  padding: 20px;
+  height: 50px;
+  border-radius: 10px 10px;
+  /* box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5); */
+}
+
+#content {
+  margin: auto;
+  width: 500px;
+}
+
+@keyframes intro_animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
