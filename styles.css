@@ -42,6 +42,10 @@ body {
   width: 500px;
 }
 
+#content > p {
+  text-align: center;
+}
+
 @keyframes intro_animation {
   0% {
     opacity: 0;
