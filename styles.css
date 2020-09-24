@@ -10,31 +10,24 @@ body {
   background-color: rgb(213, 230, 255);
   animation-name: intro_animation;
   animation-duration: 3s;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
   font-family: "Lora", serif;
 }
 
-#intro {
-  background-image: linear-gradient(rgb(183, 195, 255), rgb(213, 230, 255));
+#header {
+  /* background-image: linear-gradient(rgb(183, 195, 255), rgb(213, 230, 255)); */
+  background-image: linear-gradient(rgb(144, 160, 241), rgb(213, 230, 255));
   margin: 0 auto;
   border: 0;
   padding: 0;
   font-size: 20px;
   height: 300px;
+  text-align: center;
 }
 
-#intro > h1 {
-  margin-top: 30px;
-  /* background-color: rgba(255, 255, 255, 0.486); */
+#header > h1 {
   padding: 20px;
   height: 50px;
   border-radius: 10px 10px;
-  /* box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5); */
 }
 
 #content {
@@ -42,8 +35,50 @@ body {
   width: 500px;
 }
 
-#content > p {
+#intro {
   text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+}
+
+.link > a > div:hover {
+  background-color: rgb(213, 230, 255);
+  box-shadow: none;
+  text-decoration: none;
+}
+
+.link > a {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.link > a > div {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  transition: 1s;
+  font-size: 20px;
+  color: black;
+}
+
+.link > a > div > p {
+  margin-top: 30px;
+  text-decoration: none;
 }
 
 @keyframes intro_animation {
