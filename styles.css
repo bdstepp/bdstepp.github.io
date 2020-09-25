@@ -14,7 +14,6 @@ body {
 }
 
 #header {
-  /* background-image: linear-gradient(rgb(183, 195, 255), rgb(213, 230, 255)); */
   background-image: linear-gradient(rgb(144, 160, 241), rgb(213, 230, 255));
   margin: 0 auto;
   border: 0;
@@ -48,12 +47,6 @@ body {
   justify-content: center;
 }
 
-.link > a > div:hover {
-  background-color: rgb(213, 230, 255);
-  box-shadow: none;
-  text-decoration: none;
-}
-
 .link > a {
   display: flex;
   justify-content: center;
@@ -74,6 +67,12 @@ body {
   transition: 1s;
   font-size: 20px;
   color: black;
+}
+
+.link > a > div:hover {
+  background-color: rgb(213, 230, 255);
+  box-shadow: none;
+  text-decoration: none;
 }
 
 .link > a > div > p {
