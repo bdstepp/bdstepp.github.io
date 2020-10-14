@@ -19,7 +19,7 @@ body {
   border: 0;
   padding: 0;
   font-size: 20px;
-  height: 300px;
+  height: 150px;
   text-align: center;
 }
 
@@ -34,7 +34,7 @@ body {
   width: 500px;
 }
 
-#intro {
+.intro {
   text-align: center;
   background-color: white;
   padding: 20px;
@@ -87,4 +87,51 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+@keyframes fade_out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeout {
+  animation-name: fade_out;
+  animation-duration: 0.5s;
+}
+
+.fadein {
+  animation-name: fade_in;
+  animation-duration: 0.5s;
+}
+
+#resume {
+  display: none;
+  justify-content: center;
+}
+
+#about-me {
+  display: none;
+}
+
+#projects {
+  display: none;
+}
+
+.resume-content {
+  margin: auto;
+  text-align: left;
+  width: 600px;
 }
