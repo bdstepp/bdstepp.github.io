@@ -28,11 +28,6 @@ body {
   /* border-radius: 10px 10px; */
 }
 
-#content {
-  margin: auto;
-  width: 500px;
-}
-
 .intro {
   text-align: center;
   background-color: rgba(255, 255, 255);
@@ -118,7 +113,7 @@ body {
 }
 
 #resume {
-  display: none;
+  display: block;
   justify-content: center;
 }
 
@@ -134,11 +129,12 @@ body {
   margin: auto;
   text-align: left;
   width: 600px;
+  padding-bottom: 75px;
 }
 
 .navbar {
   padding-bottom: 50px;
-  border-bottom: 5px solid black;
+  /* border-bottom: 5px solid black; */
 }
 
 #footer {
@@ -158,4 +154,8 @@ body {
 
 .content-wrap {
   padding-bottom: 8rem;
+}
+
+#about-me {
+  display: none;
 }
